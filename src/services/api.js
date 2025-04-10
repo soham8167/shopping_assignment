@@ -2,6 +2,8 @@ import axios from 'axios';
 
 const API_URL = 'https://fakestoreapi.com';
 
+
+
 // Create axios instance
 const apiClient = axios.create({
   baseURL: API_URL,
@@ -73,8 +75,7 @@ const apiService = {
     }
   },
 
-  // Cart services (Note: for a real app, these would connect to backend)
-  // For now, these are placeholders as we'll use context for cart management
+  
   getUserCart: async (userId) => {
     try {
       const response = await apiClient.get(`/carts/user/${userId}`);
