@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import ProductList from './pages/ProductList';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
+import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 import Notification from './components/Notification';
 import { useCart } from './context/CartContext';
@@ -64,6 +65,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      {isAuthenticated && <Footer />}
     </Router>
   );
 }

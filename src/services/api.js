@@ -2,6 +2,14 @@ import axios from 'axios';
 
 const API_URL = 'https://fakestoreapi.com';
 
+// fetch(`${API_URL}/products`)
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log('All Products:', data); // ✅ Will show array of products
+//   })
+//   .catch(error => {
+//     console.error('Error fetching data:', error);
+//   });
 
 
 // Create axios instance

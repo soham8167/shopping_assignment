@@ -47,6 +47,10 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="login-container">
+      <h2 className="logindata">
+        username = soham <br /> password = 2143
+</h2>
+
       <h1 className="login-title">Sign In</h1>
       
       {error && <div className="error-message">{error}</div>}
@@ -81,11 +85,7 @@ const Login = ({ onLogin }) => {
       
       {isLoading && <Loader />}
       
-      <div style={{ marginTop: '20px', textAlign: 'center', fontSize: '0.8rem' }}>
-        <p>For testing, use these credentials:</p>
-        <p>Username: soham</p>
-        <p>Password: 2143</p>
-      </div>
+      
     </div>
   );
 };
